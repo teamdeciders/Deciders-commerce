@@ -1,13 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
     <div>
-      <h1 className='text-4xl text-red-600 text-center mt-6'>Welcome to Deciders Commerce</h1>
-      <div className='flex justify-center'>
-        <img src="https://cdn.dribbble.com/users/291221/screenshots/1425333/helper.gif" alt="" />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+      </Routes>
+      <Footer />
     </div>
   );
 }
