@@ -1,9 +1,11 @@
 import React from 'react';
+import FooterTopBanner from './FooterTopBanner';
 
 const Footer = () => {
     return (
         <div>
-            footer
+            <FooterTopBanner />
+            {/* Footer HEre */}
         </div>
     );
 };
