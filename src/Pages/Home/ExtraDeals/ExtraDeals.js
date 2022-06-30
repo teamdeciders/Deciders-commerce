@@ -7,10 +7,10 @@ import TrendingProducts from './TrendingProducts';
 const ExtraDeals = () => {
     return (
         <div>
-            <TopSelling/>
-            <TrendingProducts/>
-            <RecentlyAdded/>
-            <TopRated/>
+            <TopSelling />
+            <TrendingProducts />
+            <RecentlyAdded />
+            <TopRated />
         </div>
     );
 };
