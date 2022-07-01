@@ -9,12 +9,12 @@ import PopularProducts from './PopularProducts';
 const Home = () => {
     return (
         <div>
-            <HomeBanner/>
-            <FeaturedCategories/>
-            <PopularProducts/>
-            <BestSales/>
-            <DealsOfTheDays/>
-            <ExtraDeals/>
+            <HomeBanner />
+            <FeaturedCategories />
+            <PopularProducts />
+            <BestSales />
+            <DealsOfTheDays />
+            <ExtraDeals />
 
         </div>
     );
