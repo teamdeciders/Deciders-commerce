@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavbarMenu = () => {
     return (
-        <div>
+        <div className='bg-primary '>
             i am navbar menu i have menu nav link
         </div>
     );
