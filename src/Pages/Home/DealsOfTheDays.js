@@ -20,7 +20,7 @@ const DealsOfTheDays = () => {
           <a
             className="text-[16px] 
              font-normal mr-1"
-            href="#"
+            href="/"
           >
             ALL DETAILS
           </a>
