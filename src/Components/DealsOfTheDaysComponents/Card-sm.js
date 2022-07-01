@@ -1,5 +1,4 @@
 import { AiFillStar } from "react-icons/ai";
-import { AiOutlineRight, AiOutlinePlus } from "react-icons/ai";
 
 const Card_sm = () => {
   return (
