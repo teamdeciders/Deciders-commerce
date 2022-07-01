@@ -29,6 +29,14 @@ module.exports = {
       indigo: colors.indigo,
       yellow: colors.yellow,
     },
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald'],
+      'body': ["Open Sans"],
+      'lato':["lato"]
+    }
   },
   plugins: [],
 }
