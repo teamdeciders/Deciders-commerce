@@ -38,7 +38,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
                 alt=""
               />
@@ -101,7 +101,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-2.jpg"
                 alt=""
               />
@@ -164,7 +164,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-2.jpg"
                 alt=""
               />
@@ -222,7 +222,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-2.jpg"
                 alt=""
               />
@@ -280,7 +280,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-2.jpg"
                 alt=""
               />
@@ -343,7 +343,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
                 alt=""
               />
@@ -406,7 +406,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-2.jpg"
                 alt=""
               />
@@ -469,7 +469,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-2.jpg"
                 alt=""
               />
@@ -527,7 +527,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-2.jpg"
                 alt=""
               />
@@ -585,7 +585,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-2.jpg"
                 alt=""
               />
