@@ -9,18 +9,18 @@ import { FiEye } from "react-icons/fi";
 const PopularProducts = () => {
   return (
     <div className="lg:max-w-7xl md-w-full my-16  mx-auto px-4  md:px-3">
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <h1 className="heading-3 mb-10 text-[#253D4E]">Popular Products</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:mb-1 mb-3">
+        <h1 className="heading-3 mb-10 text-[#253D4E] font-bold">Popular Products</h1>
         <div>
-            <ul className="flex gap-5 justify-end text-textBody">
-                <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300">All</li>
-                <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300">Milks & Dairies</li>
-                <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300">Coffes & Teas</li>
-                <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300">Pet Foods</li>
-                <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300">Meats</li>
-                <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300">Vegetables</li>
-                <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300">Fruits</li>
-            </ul>
+          <ul className="flex gap-5 md:justify-end justify-start text-textBody flex-wrap ">
+            <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300 min-w-max">All</li>
+            <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300 min-w-max">Milks & Dairies</li>
+            <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300 min-w-max">Coffes & Teas</li>
+            <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300 min-w-max">Pet Foods</li>
+            <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300 min-w-max">Meats</li>
+            <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300 min-w-max">Vegetables</li>
+            <li className="transition ease-in-out delay-150 hover:text-[#3BB77E] hover:font-bold hover:-translate-y-1 duration-300 min-w-max">Fruits</li>
+          </ul>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
@@ -38,7 +38,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
                 alt=""
               />
@@ -101,7 +101,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-2.jpg"
                 alt=""
               />
@@ -127,7 +127,7 @@ const PopularProducts = () => {
               <small>Hodo Foods</small>
             </p>
             <p className="heading-sm hover:text-[#3BB77E]">
-            All Natural Italian-Style Chicken Meatballs
+              All Natural Italian-Style Chicken Meatballs
             </p>
             <div className="flex items-center text-warning gap-1 mt-2">
               <AiFillStar />
@@ -164,7 +164,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-2.jpg"
                 alt=""
               />
@@ -190,7 +190,7 @@ const PopularProducts = () => {
               <small>Hodo Foods</small>
             </p>
             <p className="heading-sm hover:text-[#3BB77E]">
-            Angie’s Boomchickapop Sweet & Salty Kettle Corn
+              Angie’s Boomchickapop Sweet & Salty Kettle Corn
             </p>
             <div className="flex items-center text-warning gap-1 mt-2">
               <AiFillStar />
@@ -222,7 +222,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-2.jpg"
                 alt=""
               />
@@ -248,7 +248,7 @@ const PopularProducts = () => {
               <small>Vegetables</small>
             </p>
             <p className="heading-sm hover:text-[#3BB77E]">
-            Foster Farms Takeout Crispy Classic Buffalo Wings
+              Foster Farms Takeout Crispy Classic Buffalo Wings
             </p>
             <div className="flex items-center text-warning gap-1 mt-2">
               <AiFillStar />
@@ -280,7 +280,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-2.jpg"
                 alt=""
               />
@@ -306,7 +306,7 @@ const PopularProducts = () => {
               <small>Pet Foods</small>
             </p>
             <p className="heading-sm hover:text-[#3BB77E]">
-            Blue Diamond Almonds Lightly Salted Vegetables
+              Blue Diamond Almonds Lightly Salted Vegetables
             </p>
             <div className="flex items-center text-warning gap-1 mt-2">
               <AiFillStar />
@@ -343,7 +343,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-1-2.jpg"
                 alt=""
               />
@@ -406,7 +406,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-2-2.jpg"
                 alt=""
               />
@@ -432,7 +432,7 @@ const PopularProducts = () => {
               <small>Hodo Foods</small>
             </p>
             <p className="heading-sm hover:text-[#3BB77E]">
-            All Natural Italian-Style Chicken Meatballs
+              All Natural Italian-Style Chicken Meatballs
             </p>
             <div className="flex items-center text-warning gap-1 mt-2">
               <AiFillStar />
@@ -469,7 +469,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-3-2.jpg"
                 alt=""
               />
@@ -495,7 +495,7 @@ const PopularProducts = () => {
               <small>Hodo Foods</small>
             </p>
             <p className="heading-sm hover:text-[#3BB77E]">
-            Angie’s Boomchickapop Sweet & Salty Kettle Corn
+              Angie’s Boomchickapop Sweet & Salty Kettle Corn
             </p>
             <div className="flex items-center text-warning gap-1 mt-2">
               <AiFillStar />
@@ -527,7 +527,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-4-2.jpg"
                 alt=""
               />
@@ -553,7 +553,7 @@ const PopularProducts = () => {
               <small>Vegetables</small>
             </p>
             <p className="heading-sm hover:text-[#3BB77E]">
-            Foster Farms Takeout Crispy Classic Buffalo Wings
+              Foster Farms Takeout Crispy Classic Buffalo Wings
             </p>
             <div className="flex items-center text-warning gap-1 mt-2">
               <AiFillStar />
@@ -585,7 +585,7 @@ const PopularProducts = () => {
                 alt=""
               />
               <img
-                className="hover:transition duration-500"
+                className="group-hover:scale-105 ease-in-out duration-500"
                 src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-5-2.jpg"
                 alt=""
               />
@@ -611,7 +611,7 @@ const PopularProducts = () => {
               <small>Pet Foods</small>
             </p>
             <p className="heading-sm hover:text-[#3BB77E]">
-            Blue Diamond Almonds Lightly Salted Vegetables
+              Blue Diamond Almonds Lightly Salted Vegetables
             </p>
             <div className="flex items-center text-warning gap-1 mt-2">
               <AiFillStar />
