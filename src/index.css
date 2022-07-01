@@ -15,102 +15,116 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-.font-main{
+
+.font-main {
   font-family: 'Quicksand', sans-serif;
 }
 
-.display-1{
+.display-1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 96px;
   line-height: 128px;
   letter-spacing: 0;
   font-weight: 700 bold;
 }
-.display-2{
+
+.display-2 {
   font-family: 'Quicksand', sans-serif;
   font-size: 72px;
   line-height: 96px;
   letter-spacing: 0;
   font-weight: 700 bold;
 }
-.heading-1{
+
+.heading-1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 48px;
   line-height: 64px;
   letter-spacing: 0;
   font-weight: 700 bold;
 }
-.heading-2{
+
+.heading-2 {
   font-family: 'Quicksand', sans-serif;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 0;
   font-weight: 700 bold;
 }
-.heading-3{
+
+.heading-3 {
   font-family: 'Quicksand', sans-serif;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0;
-  font-weight: 700 bold;
+  font-weight: 900 bold;
 }
-.heading-4{
+
+.heading-4 {
   font-family: 'Quicksand', sans-serif;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0;
   font-weight: 700 bold;
 }
-.heading-5{
+
+.heading-5 {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0;
   font-weight: 700 bold;
 }
-.heading-6{
+
+.heading-6 {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0;
   font-weight: 700 bold;
 }
-.heading-sm{
+
+.heading-sm {
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0;
   font-weight: 700 bold;
 }
-.text-lg{
+
+.text-lg {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0;
   font-weight: 500 normal;
 }
-.text-md{
+
+.text-md {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0;
   font-weight: 500 normal;
 }
-.text-sm{
+
+.text-sm {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0;
   font-weight: 500 normal;
 }
-.text-xs{
+
+.text-xs {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0;
   font-weight: 500 normal;
 }
-         
+
 
 /* */
