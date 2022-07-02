@@ -6,6 +6,7 @@ const Footer = () => {
         <div>
             <FooterTopBanner />
             {/* Footer HEre */}
+            <h1>Mayed is working...</h1>
         </div>
     );
 };
