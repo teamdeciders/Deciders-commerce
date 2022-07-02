@@ -7,7 +7,7 @@ import Home from './Pages/Home/Home';
 
 function App() {
   return (
-    <div>
+    <div className=" xxl:max-w-7xl md-w-full  mx-auto    md:px-3">
       <Navbar />
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
