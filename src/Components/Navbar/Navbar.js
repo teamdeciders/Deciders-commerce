@@ -1,12 +1,15 @@
 import React from 'react';
 import NavbarMenu from './NavbarMenu';
 import NavbarTop from './NavbarTop';
+import useWindowSize from './useWindowSize';
+
 
 const Navbar = () => {
+    const size = useWindowSize(); 
     return (
-        <div>
+        <div className=' mx-auto w-11/12 '>
             <NavbarTop />
-            <NavbarMenu />
+            { size  >= 1280 &&<NavbarMenu />}
         </div>
     );
 };
