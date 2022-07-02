@@ -10,7 +10,7 @@ const Footer = () => {
                 <FooterTopBanner />
                 {/* Footer HEre */}
                 <div className='mt-6 p-2 flex '>
-                    <div className="flex flex-wrap justify-between gap-14 p-2 ">
+                    <div className="flex flex-wrap justify-evenly  ">
                         <div className="footerlogo max-w-sm  pr-6   ">
                             <img src="https://i.ibb.co/f9VXHJ7/Logo.png" alt="" />
                             <p className='my-2'> Pellentesque posuere orci lobortis</p>
