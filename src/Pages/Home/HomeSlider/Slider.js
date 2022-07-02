@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SliderContent from './SliderContent';
 import imageSlider from './HomeBanner'
-import Arrows from './Arrow'
-import Arrow from './Arrow';
-import Dots from './Dots';
+import Arrow from '../Arrow';
+import Dots from '../Dots';
 import './slider.css'
 
 const len = imageSlider.length - 1;

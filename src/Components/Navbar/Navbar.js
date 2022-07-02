@@ -7,7 +7,7 @@ import useWindowSize from './useWindowSize';
 const Navbar = () => {
     const size = useWindowSize(); 
     return (
-        <div className=' mx-auto w-11/12 '>
+        <div>
             <NavbarTop />
             { size  >= 1280 &&<NavbarMenu />}
         </div>
