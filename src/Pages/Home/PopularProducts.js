@@ -5,10 +5,11 @@ import {
   AiFillStar,
 } from "react-icons/ai";
 import { FiEye } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const PopularProducts = () => {
   return (
-    <div className="lg:max-w-7xl md-w-full my-16  mx-auto px-4  md:px-3">
+    <div className="xxl:max-w-7xl md-w-full my-16  mx-auto px-4  md:px-3">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:mb-1 mb-3">
         <h1 className="heading-3 mb-10 text-[#253D4E] font-bold">Popular Products</h1>
         <div>
@@ -80,9 +81,11 @@ const PopularProducts = () => {
             <div className="flex items-center gap-2">
               <p className="text-2xl font-semibold text-[#3BB78F]">$28.85</p>
               <del className="text-textBody font-semibold">32.80</del>
+              <Link to={'/cart'}>
               <button className="mx-auto bg-[#DEF9EC] text-[#3BB78F] font-semibold px-3 rounded py-2 flex items-center gap-2 hover:bg-[#3BB77E] hover:text-[#FFF]">
                 <AiOutlineShoppingCart /> Add
               </button>
+              </Link>
             </div>
           </div>
         </div>
