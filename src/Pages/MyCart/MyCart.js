@@ -29,6 +29,7 @@ const MyCart = () => {
           </div>
         </div>
       </div>
+      {/* add */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-x-10 gap-y-5">
         <div className="col-span-3">
          <div>
