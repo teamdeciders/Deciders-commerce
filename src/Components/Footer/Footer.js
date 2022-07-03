@@ -3,6 +3,7 @@ import FooterTopBanner from './FooterTopBanner';
 import { GoLocation } from 'react-icons/go'
 import { FiPhoneCall, FiClock } from 'react-icons/fi'
 import { GiPaperPlane } from 'react-icons/gi'
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer>
@@ -55,7 +56,7 @@ const Footer = () => {
 
                             <h4 className='my-2 heading-4 font-bold'>Account</h4>
                             <ul>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Sign In</li>
+                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '><Link to='/singup'>Sign In</Link></li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>View Cart</li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>My Wishlist</li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Track My Order</li>
@@ -87,7 +88,7 @@ const Footer = () => {
 
                             <h4 className='my-2 heading-4 font-bold'>Information</h4>
                             <ul>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Search Terms</li>
+                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '><Link to='/contact'>Contact us</Link></li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Advanced Search</li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Help & FAQ's</li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Store Location</li>

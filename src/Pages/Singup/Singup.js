@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillApple, AiFillGithub } from 'react-icons/ai';
 import { BsFacebook, BsGoogle, FcGoogle } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
@@ -30,9 +30,9 @@ const Singup = () => {
                 </div>
 
                 <div className='lg:w-[400px] lg:h-[300px] w-full h-full border shadow-lg p-8 mt-32 rounded'>
-                    <button className=' bg-[#1877F2] w-full py-3 rounded-md text-white '> <span className='flex items-center gap-4 justify-center'><BsFacebook className='w-8 h-8'></BsFacebook> Continue With Facebook</span></button>
-                    <button className=' bg-[#FFFFFF] w-full py-3 rounded-md  shadow-lg border text-[#7E7E7E] mt-6'> <span className='flex items-center gap-4 justify-center'> <img className='w-8 h-8' src="https://img.icons8.com/fluency/2x/google-logo.png" alt="" /> Continue with Google</span></button>
-                    <button className=' bg-[#000000] w-full py-3 rounded-md text-white mt-6'> <span className='flex items-center gap-4 justify-center'><AiFillGithub className='w-8 h-8'></AiFillGithub> Continue with Github</span></button>
+                    <button className=' bg-[#1877F2] w-full py-3 rounded-md text-white '> <span className='flex items-center gap-4 justify-center translate-y-0 hover:-translate-y-1 duration-300'><BsFacebook className='w-8 h-8'></BsFacebook> Continue With Facebook</span></button>
+                    <button className=' bg-[#FFFFFF] w-full py-3 rounded-md  shadow-lg border text-[#7E7E7E] mt-6 translate-y-0 hover:-translate-y-1 duration-300'> <span className='flex items-center gap-4 justify-center'> <img className='w-8 h-8' src="https://img.icons8.com/fluency/2x/google-logo.png" alt="" /> Continue with Google</span></button>
+                    <button className=' bg-[#000000] w-full py-3 rounded-md text-white mt-6 translate-y-0 hover:-translate-y-1 duration-300'> <span className='flex items-center gap-4 justify-center '><AiFillApple className='w-8 h-8'></AiFillApple> Continue with Apple</span></button>
                 </div>
             </div>
 
