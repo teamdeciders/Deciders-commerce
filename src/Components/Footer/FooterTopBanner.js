@@ -3,8 +3,7 @@ import React from 'react';
 const FooterTopBanner = () => {
     return (
         <div>
-            Footer Top Banner
-
+            <h1>Shoumik</h1>
         </div>
     );
 };
