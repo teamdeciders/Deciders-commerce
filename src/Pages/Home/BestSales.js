@@ -12,7 +12,7 @@ import img4 from '../../Assets/best-slider/22 1.png';
 
 const BestSales = () => {
   return (
-    <div className="lg:max-w-7xl md-w-full my-16  mx-auto px-4  md:px-3">
+    <div className="xxl:max-w-7xl md-w-full my-16  mx-auto px-4  md:px-3">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <p className="heading-3 mb-10 text-[#253D4E] font-bold">Daily Best Sales</p>
         <div>
