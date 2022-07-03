@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import useWindowSize from './useWindowSize';
 import { GoLocation } from 'react-icons/go';
 import { BiMessageSquareDetail } from 'react-icons/bi';
-import { RiListSettingsFill } from 'react-icons/ri';
+import { RiArrowDropDownLine, RiListSettingsFill } from 'react-icons/ri';
 const NavbarTop = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -75,30 +75,85 @@ const NavbarTop = () => {
 
                         Account
                     </Link></li> */}
+                    <div class="flex gap-1 items-center">
+                        <div>
+                            <div class="dropdown relative">
 
-                    <div class="hs-dropdown relative inline-flex">
-                        <button id="hs-dropdown-default" type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-                            Actions
-                            <svg class="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                            </svg>
-                        </button>
+                                <button
+                                    class="  dropdown-toggle bg-blue-600   font-medium 
+                                    flex
+                                    items-center
+                                    whitespace-nowrap
+                                  "
 
-                        <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 w-72 hidden z-10 mt-2 min-w-[15rem] bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700" aria-labelledby="hs-dropdown-default">
-                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                Newsletter
-                            </a>
-                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                Purchases
-                            </a>
-                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                Downloads
-                            </a>
-                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                                Team Account
-                            </a>
+                                    type="button"
+                                    id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Account
+
+                                    <RiArrowDropDownLine className='w-6 h-6'></RiArrowDropDownLine>
+
+                                </button>
+                                <ul
+                                    class="
+          dropdown-menu
+          min-w-max
+          absolute
+          bg-white
+          text-base
+          z-50
+          float-left
+          py-2
+          list-none
+          text-left
+          rounded-lg
+          shadow-lg
+          mt-1
+          hidden
+          m-0
+          bg-clip-padding
+          border-none
+        "
+                                    aria-labelledby="dropdownMenuButton1"
+                                >
+                                    <div className='w-[230px] h-[270px] border shadow-xl rounded-lg'>
+                                        <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer hover:text-success translate-y-0  duration-300'>
+                                            <FiUser className='w-6 h-6'></FiUser>
+                                            <h1>My Account</h1>
+                                        </div>
+                                        <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer hover:text-success translate-y-0  duration-300'>
+                                            <GoLocation className='w-6 h-6'></GoLocation>
+                                            <h1>Order Tracking</h1>
+                                        </div>
+                                        <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer  hover:text-success translate-y-0  duration-300'>
+                                            <BiMessageSquareDetail className='w-6 h-6'></BiMessageSquareDetail>
+                                            <h1>My Voucher</h1>
+                                        </div>
+                                        <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer  hover:text-success translate-y-0  duration-300'>
+                                            <GiSelfLove className='w-6 h-6'></GiSelfLove>
+                                            <h1>My WishList</h1>
+                                        </div>
+                                        <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer  hover:text-success translate-y-0  duration-300'>
+                                            <RiListSettingsFill className='w-6 h-6'></RiListSettingsFill>
+                                            <h1>Setting</h1>
+                                        </div>
+                                        <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer hover:text-success translate-y-0  duration-300'>
+                                            <FiLogOut className='w-6 h-6'></FiLogOut>
+                                            <h1>Sing out</h1>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
+
 
 
                     <li><Link className='flex gap-1 items-center hover:text-success ' to="/"><BsHeart /> Wishlist</Link></li>

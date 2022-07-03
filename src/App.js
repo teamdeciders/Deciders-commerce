@@ -16,6 +16,7 @@ import MyOrders from './Dashboard/MyOrders';
 import MyAddress from './Dashboard/MyAddress';
 import TrackYourOrder from './Dashboard/TrackYourOrder';
 import AccountDetails from './Dashboard/AccountDetails';
+import Checkout from './Pages/Checkout/Checkout';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
 
 
 
+        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
         <Route path='*' element={<NotFoundPage></NotFoundPage>}></Route>
       </Routes>
       <Footer />
