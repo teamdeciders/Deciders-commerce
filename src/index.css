@@ -128,3 +128,9 @@ code {
 
 
 /* */
+.cart{
+  background: url('./Assets/bg-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #D8F1E5;
+}
