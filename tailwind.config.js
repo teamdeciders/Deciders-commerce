@@ -17,7 +17,7 @@ module.exports = {
       "textBody": "#7e7e7e",
       "brandColor1": "#81B13D",
       "brandColor2": "#FDC040",
-      "brand1": "#5B9D34",
+      "brand1": "#3BB77E",
       "scale1": "#81B13D",
       "scale2": "#3A882B",
       "scale3": "#227226",

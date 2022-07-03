@@ -21,7 +21,11 @@ import Singup from './Pages/Singup/Singup';
 import ForgetPassword from './Pages/ForgetPassword/ForgetPassword';
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import Contact from './Pages/Contact/Contact';
+<<<<<<< HEAD
 >>>>>>> 4564c02c6ca5ade301cf6fe8504f521eea8763c1
+=======
+import Checkout from './Pages/Checkout/Checkout';
+>>>>>>> c33c61e53642f7f232d4fe4ac9c7de6ba205f704
 
 function App() {
   return (
@@ -39,6 +43,7 @@ function App() {
         <Route path='/singup' element={<Singup></Singup>}></Route>
         <Route path='/forgetpassword' element={<ForgetPassword></ForgetPassword>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
         <Route path='*' element={<NotFoundPage></NotFoundPage>}></Route>
 >>>>>>> 4564c02c6ca5ade301cf6fe8504f521eea8763c1
       </Routes>
