@@ -2,7 +2,7 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", "./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
     colors: {
@@ -46,6 +46,8 @@ module.exports = {
       'que': ["Quicksand"]
     }
   },
-  plugins: [],
-  
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ]
+
 }

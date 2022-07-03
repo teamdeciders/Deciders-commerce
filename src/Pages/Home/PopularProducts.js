@@ -59,6 +59,7 @@ const PopularProducts = () => {
                 <FiEye />
               </a>
             </div>
+
           </div>
           <div className="p-3">
             <p className="text-textBody hover:text-[#3BB77E]">
@@ -82,9 +83,9 @@ const PopularProducts = () => {
               <p className="text-2xl font-semibold text-[#3BB78F]">$28.85</p>
               <del className="text-textBody font-semibold">32.80</del>
               <Link to={'/cart'}>
-              <button className="mx-auto bg-[#DEF9EC] text-[#3BB78F] font-semibold px-3 rounded py-2 flex items-center gap-2 hover:bg-[#3BB77E] hover:text-[#FFF]">
-                <AiOutlineShoppingCart /> Add
-              </button>
+                <button className="mx-auto bg-[#DEF9EC] text-[#3BB78F] font-semibold px-3 rounded py-2 flex items-center gap-2 hover:bg-[#3BB77E] hover:text-[#FFF]">
+                  <AiOutlineShoppingCart /> Add
+                </button>
               </Link>
             </div>
           </div>
