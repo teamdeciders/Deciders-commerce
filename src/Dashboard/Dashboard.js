@@ -1,5 +1,4 @@
 import React from 'react';
-import { AiOutlineHome } from 'react-icons/ai';
 import { BsBag, BsCartDash } from 'react-icons/bs';
 import { FiLogOut, FiUser } from 'react-icons/fi';
 import { GoLocation } from 'react-icons/go';
@@ -20,11 +19,11 @@ const Dashboard = () => {
                 <div className='md:w-[22%] md:max-h-max h-full  p-3'>
 
 
-                    <CustomLink to={''}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold'><BsBag className='block text-xl mr-4 ml-4' /> Orders</span> </CustomLink>
-                    <Link to={'trackorder'}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold'><BsCartDash className='block text-xl mr-4 ml-4' /> Track Your Order</span> </Link>
-                    <Link to={'myaddress'}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold'><GoLocation className='block text-xl mr-4 ml-4' /> My Address</span> </Link>
-                    <Link to={'accountdetails'}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold'><FiUser className='block text-xl mr-4 ml-4' /> Account Details</span> </Link>
-                    <Link to={''}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold'><FiLogOut className='block text-xl mr-4 ml-4' /> Log out</span> </Link>
+                    <CustomLink to={''}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold hover:border-success hover:shadow-md'><BsBag className='block text-xl mr-4 ml-4' /> Orders</span> </CustomLink>
+                    <Link to={'trackorder'}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold hover:border-success hover:shadow-md'><BsCartDash className='block text-xl mr-4 ml-4' /> Track Your Order</span> </Link>
+                    <Link to={'myaddress'}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold hover:border-success hover:shadow-md'><GoLocation className='block text-xl mr-4 ml-4' /> My Address</span> </Link>
+                    <Link to={'accountdetails'}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold hover:border-success hover:shadow-md'><FiUser className='block text-xl mr-4 ml-4' /> Account Details</span> </Link>
+                    <Link to={''}> <span className=' flex items-center border border-[#E5E5E5] h-[50px] w-[220px] mb-3 rounded-lg font-semibold hover:border-success hover:shadow-md'><FiLogOut className='block text-xl mr-4 ml-4' /> Log out</span> </Link>
 
                 </div>
                 <div className='md:w-[80%]  p-2 '>
