@@ -1,11 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { FaArrowRight, FaArrowLeft, FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import cat from '../../Assets/Image/feature/cat-13-1.png'
-import onion from '../../Assets/Image/feature/onion.png'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 
 
@@ -14,10 +13,10 @@ const FeaturedCategories = () => {
 
     const settings = {
         // dots: true,
-        infinite: true,
-        speed: 500,
+        arrows: false,
         slidesToShow: 6,
-        slidesToScroll: 1
+        slidesToScroll: 2,
+        infinite: true,
     }
     const hotelCards = [
         {
@@ -91,8 +90,8 @@ const FeaturedCategories = () => {
                     </ul>
                 </div>
                 <div className='flex justify-end px-4 gap-2 basis-2/12'>
-                    <div onCLick={sliderRef?.slickPrev} className='rounded-full bg-[#F2F3F4] p-3 hover:bg-[#3BB77E]' ><FaArrowLeft /></div>
-                    <div onCLick={sliderRef?.slickNext} className='rounded-full bg-[#F2F3F4] p-3 hover:bg-[#3BB77E]' ><FaArrowRight /></div>
+                    <div className='rounded-full bg-[#F2F3F4] p-3 hover:bg-[#3BB77E]' ><FaArrowLeft /></div>
+                    <div className='rounded-full bg-[#F2F3F4] p-3 hover:bg-[#3BB77E]' ><FaArrowRight /></div>
 
 
                 </div>
@@ -126,7 +125,7 @@ const FeaturedCategories = () => {
             </div>
             {/* three card */}
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 my-6'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 my-6 mx-3 lg:mx-2'>
                 <div className='bg-onionOne relative w-full h-60 bg-cover rounded ' >
                     <div className='absolute top-5 z-[2] p-8'>
                         <h3 className='text-[24px] font-bold font-Quicksand text-[#253D4E] hover:-translate-y-3 duration-500 min-h-[100px] '>Everyday Fresh & <br />
