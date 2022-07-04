@@ -71,10 +71,6 @@ const NavbarTop = () => {
 
 
                 <ul className='flex font-lato   justify-between gap-5 font-base text-textBody'>
-                    {/* <li><Link className='flex gap-1 items-center hover:text-success ' to="/"><FiUser />
-
-                        Account
-                    </Link></li> */}
                     <div class="flex gap-1 items-center">
                         <div>
                             <div class="dropdown relative">
@@ -97,32 +93,14 @@ const NavbarTop = () => {
 
                                 </button>
                                 <ul
-                                    class="
-          dropdown-menu
-          min-w-max
-          absolute
-          bg-white
-          text-base
-          z-50
-          float-left
-          py-2
-          list-none
-          text-left
-          rounded-lg
-          shadow-lg
-          mt-1
-          hidden
-          m-0
-          bg-clip-padding
-          border-none
-        "
+                                    class=" dropdown-menu min-w-max absolute bg-white text-base z-50 float-left py-2 list-none  text-left shadow-md rounded-md mt-1  hidden   m-0  bg-clip-padding border-none"
                                     aria-labelledby="dropdownMenuButton1"
                                 >
-                                    <div className='w-[230px] h-[270px] border shadow-xl rounded-lg'>
-                                        <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer hover:text-success translate-y-0  duration-300'>
+                                    <div className='w-[230px] h-[270px] '>
+                                        <Link to='/dashboard' className='flex gap-2 items-center ml-4 mt-4 cursor-pointer hover:text-success translate-y-0  duration-300'>
                                             <FiUser className='w-6 h-6'></FiUser>
                                             <h1>My Account</h1>
-                                        </div>
+                                        </Link>
                                         <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer hover:text-success translate-y-0  duration-300'>
                                             <GoLocation className='w-6 h-6'></GoLocation>
                                             <h1>Order Tracking</h1>
@@ -152,8 +130,6 @@ const NavbarTop = () => {
                             </div>
                         </div>
                     </div>
-
-
 
 
                     <li><Link className='flex gap-1 items-center hover:text-success ' to="/"><BsHeart /> Wishlist</Link></li>

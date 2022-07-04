@@ -26,7 +26,7 @@ const Login = () => {
 
                             <div className="flex cursor-pointer">
                                 <input type="checkbox" className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 pointer-events-none focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox" />
-                                <label for="hs-default-checkbox" className="text-sm text-gray-500 ml-3 mt-1 dark:text-gray-400">Remember me</label>
+                                <label for="hs-default-checkbox" className="text-sm text-success ml-3 mt-1 cursor-pointer">Remember me</label>
                             </div>
                             <Link to='/forgetpassword' className='font-medium text-[#B6B6B6]'>Forget Password</Link></div>
                         <button className=' bg-[#253D4E] w-full py-3 rounded text-white mt-8  translate-y-0 hover:-translate-y-1 duration-300'><span className='flex items-center gap-4 justify-center translate-y-0 hover:-translate-y-1 duration-300'><AiOutlineLogin className='w-8 h-8'></AiOutlineLogin> Please Login</span></button>

@@ -13,11 +13,16 @@ const ForgetPassword = () => {
                 <form>
                     <input type="email" className='py-3 px-3 border border-[ #E5E5E5] rounded w-full mb-4' placeholder='Your Email Address' />
                     <div className='flex justify-between'>
-                        <div className='flex gap-4'>
+                        {/* <div className='flex gap-4'>
                             <input className='w-4 h-4 bg-success ' type="checkbox" name="" id="" />
                             <p className='text-[#B6B6B6] mt-[-5px] font-medium'>I agree to terms & Policy.
                             </p>
+                        </div> */}
+                        <div className="flex cursor-pointer">
+                            <input type="checkbox" className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 pointer-events-none focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-default-checkbox" />
+                            <label for="hs-default-checkbox" className="text-sm text-[#B6B6B6] ml-3 mt-1 cursor-pointer">I agree to terms & Policy.</label>
                         </div>
+
                         <button className='font-medium text-success'>Learn more</button></div>
                     <button className=' bg-[#253D4E] w-[150px] py-3 rounded text-white font-medium mt-8'>Reset Password</button>
 

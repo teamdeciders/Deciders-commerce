@@ -18,7 +18,7 @@ import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import Contact from './Pages/Contact/Contact';
 import About from './Pages/About/About';
 
-import Account from './Pages/Account';
+
 import Dashboard from './Dashboard/Dashboard';
 import MyOrders from './Dashboard/MyOrders';
 import MyAddress from './Dashboard/MyAddress';
@@ -45,12 +45,11 @@ function App() {
         <Route path='/singup' element={<Singup></Singup>}></Route>
         <Route path='/forgetpassword' element={<ForgetPassword></ForgetPassword>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
-        <Route path='/account' element={<Account></Account>}></Route>
 
 
 
 
-        {/* Dashboard */}
+        {/*single User Dashboard */}
         <Route path='/dashboard' element={<Dashboard></Dashboard>}>
           <Route index path='' element={<MyOrders />}></Route>
           <Route path='myaddress' element={<MyAddress />}></Route>
