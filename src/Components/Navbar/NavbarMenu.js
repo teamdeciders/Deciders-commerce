@@ -98,6 +98,7 @@ const NavbarMenu = () => {
                 <li className='hover:text-success heading-6'><Link to="/">Home</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Hot Deals</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Home</Link></li>
+                <li className='hover:text-success heading-6'><Link to="/about">About</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Food </Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Vegetables</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Drink </Link></li>
