@@ -12,11 +12,11 @@ import '../../index.css';
 
 const MyCart = () => {
   return (
-    <div className="xxl:max-w-7xl md-w-full my-16  mx-auto px-4  md:px-3">
+    <div className="xxl:max-w-7xl md-w-full my-16 px-2 mx-auto">
       <h1 className="text-4xl font-main text-textHeading font-bold mb-5">
         Your Cart
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-5">
+      <div className="grid grid-cols-1 lg:grid-cols-5">
         <div className="col-span-3">
         <div className="flex justify-between font-main text-base font-bold text-textBody mb-10">
             <p>
@@ -29,9 +29,9 @@ const MyCart = () => {
           </div>
         </div>
       </div>
-      {/* add */}
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-x-10 gap-y-5">
-        <div className="col-span-3">
+      {/*  */}
+      <div className="grid grid-cols-1 lg:grid-cols-6 gap-x-5 gap-y-5">
+        <div className="col-span-4">
          <div>
             <div className=" overflow-x-auto rounded-sm">
               <table className="w-full text-sm text-left">
@@ -51,9 +51,9 @@ const MyCart = () => {
                     <input type="checkbox" name="checkbox" />
                     </td>
                     <td className="px-4 py-4">
-                        <div className="flex items-center gap-3">
-                            <img className="w-20 border p-2 rounded" src={img1} alt="" />
-                            <p><small>Field Roast Chao Cheese Creamy Original</small></p>
+                        <div className="flex flex-wrap lg:flex-nowrap items-center gap-3 ">
+                            <img className="w-20 border p-2 rounded " src={img1} alt="" />
+                            <p  className="text-justify"><small>Field Roast Chao Cheese Creamy Original</small></p>
                         </div>
                     </td>
                     <td className="px-6 py-4 text-textBody text-2xl">
@@ -76,9 +76,9 @@ const MyCart = () => {
                     <input type="checkbox" name="checkbox" />
                     </td>
                     <td className="px-4 py-4">
-                        <div className="flex items-center gap-3">
+                        <div className="flex flex-wrap lg:flex-nowrap items-center gap-3">
                             <img className="w-20 border p-2 rounded" src={img2} alt="" />
-                            <p><small className="leading-normal">Seeds of Change Organic Quinoa, Brown, & Red Rice</small></p>
+                            <p className="text-justify"><small className="leading-normal">Seeds of Change Organic Quinoa, Brown, & Red Rice</small></p>
                         </div>
                     </td>
                     <td className="px-6 py-4 text-textBody text-2xl">
@@ -100,9 +100,9 @@ const MyCart = () => {
                     <input type="checkbox" name="checkbox" />
                     </td>
                     <td className="px-4 py-4">
-                        <div className="flex items-center gap-3">
+                        <div className="flex flex-wrap lg:flex-nowrap items-center gap-3">
                             <img className="w-20 border p-2 rounded" src={img3} alt="" />
-                            <p><small>Field Roast Chao Cheese Creamy Original</small></p>
+                            <p className="text-justify"><small>Field Roast Chao Cheese Creamy Original</small></p>
                         </div>
                     </td>
                     <td className="px-6 py-4 text-textBody text-2xl">
@@ -124,8 +124,8 @@ const MyCart = () => {
             </div>
           </div>
         </div>
-        <div className="border col-span-2 sm:px-5 md:px-10 pt-10 pb-3 rounded-md">
-            <div className="sm:border-0 md:border rounded p-3">
+        <div className="col-span-2">
+            <div className="border rounded p-3">
             <div className="flex justify-between border-b-2">
                 <p className="font-main font-bold text-textBody">Subtotal</p>
                 <p className="text-[#3BB77E] text-2xl font-main font-bold mb-5">$12.31</p>
@@ -147,8 +147,8 @@ const MyCart = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 mt-16">
-        <div className="col-span-3">
+      <div className="grid grid-cols-1 lg:grid-cols-6 mt-16">
+        <div className="col-span-4">
         <div className="flex justify-between font-main text-base font-medium text-white mb-10">
            <button className="bg-[#3BB77E] px-3 py-2 rounded flex justify-center items-center gap-3 hover:bg-brandColor2 transition duration-500"><HiArrowLeft/>Continue Shopping</button>
            <button className="bg-[#3BB77E] px-3 py-2 rounded flex justify-center items-center gap-3 hover:bg-brandColor2 transition duration-500"><FiRefreshCcw/>Update Cart</button>
@@ -156,9 +156,9 @@ const MyCart = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-5">
-        <div className="col-span-3">
-            <div className="grid  grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-6">
+        <div className="col-span-4 ">
+            <div className="grid  grid-cols-1 md:grid-cols-4 gap-5">
                 <div className="col-span-2 border rounded p-5">
                     <p className="text-2xl font-bold text-textHeading font-main">Calculate Shipping</p>
                     <p className="text-textBody text-base font-main font-semibold"><small>Flat rate:</small> <span className="text-[#3BB77E] font-bold">5%</span></p>
@@ -173,7 +173,7 @@ const MyCart = () => {
                     </div>
                 </form>
                 </div>
-                <div className="p-5">
+                <div className="col-span-2 p-5">
                     <p className="text-2xl font-bold text-textHeading font-main">Apply Coupon</p>
                     <p className="text-textBody text-base font-main font-semibold">Using A Promo Code?</p>
                     <div className="flex mt-7">
@@ -188,7 +188,7 @@ const MyCart = () => {
       <div className="cart mt-16 bg-[#D8F1E5] pt-5 rounded-md ">
         <div className="grid grid-cols-1 md:grid-cols-2">
         <div>
-          <div className="p-10">
+          <div className="p-5 md:p-10">
             <h1 className="text-textHeading font-main font-bold text-4xl">Stay home & get your daily needs from our shop</h1>
             <p className="text-textBody font-semibold font-main text-xl mt-10">Start You'r Daily Shopping with <span className="text-[#3BB77E]">Nest Mart</span></p>
             <div className="flex mt-10">
