@@ -1,7 +1,9 @@
 import React from 'react';
 import { GoLocation } from 'react-icons/go';
+
 import googleimg from '../../Assets/Rectangle 38.png'
 const Contact = () => {
+
     return (
         <div className='mt-12 mx-8'>
             <h1 className=' text-success font-lato'>How can help you ?</h1>
@@ -29,11 +31,11 @@ const Contact = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                 </div>
             </div>
+            {/* google map */}
 
             <div className='mt-12'>
                 <img src={googleimg} alt="" />
             </div>
-
 
             {/* office studio shop */}
 

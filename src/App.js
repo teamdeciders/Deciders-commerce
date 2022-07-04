@@ -16,8 +16,6 @@ import Singup from './Pages/Singup/Singup';
 import ForgetPassword from './Pages/ForgetPassword/ForgetPassword';
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import Contact from './Pages/Contact/Contact';
-
-import Account from './Pages/Account';
 import Dashboard from './Dashboard/Dashboard';
 import MyOrders from './Dashboard/MyOrders';
 import MyAddress from './Dashboard/MyAddress';

@@ -1,26 +1,26 @@
 import React from 'react';
-import banner10 from '../../Assets/New folder/banner-10.png'
-import banner9 from '../../Assets/New folder/banner-9.png'
-
 const FooterTopBanner = () => {
     return (
-        <section style={{
-            background: `url(${banner10})`
-        }} className=" rounded-3xl" >
-            <div className='lg:flex justify-center items-center'>
-                <div className='pl-10'>
-                    <h1 className='text-5xl font-bold text-[#253d4e]'>Stay home & get your daily needs from our shop</h1>
-                    <p className='text-[#7E7E7E] text-xl font-semibold mt-5 py-4'>Start You'r Daily Shopping with <span className='text-[#3BB77E]'>Nest Mart</span></p>
-                    <div className=''>
-                        <input className=' px-10 py-5 pl-16 pr-28  rounded-full  mt-4' type="search" name="" id="" placeholder='Your email address' />
-                        <button className=' absolute bg-[#3BB77E] rounded-full right-2/3 mt-4  px-8 py-5  text-white'>Subscribe</button>
+
+
+
+        <div className="cart mt-8 bg-[#D8F1E5] pt-5 rounded-md ">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                <div>
+                    <div className="p-5 md:p-10">
+                        <h1 className="text-textHeading font-main font-bold text-4xl">Stay home & get your daily needs from our shop</h1>
+                        <p className="text-textBody font-semibold font-main text-xl mt-10">Start You'r Daily Shopping with <span className="text-[#3BB77E]">Nest Mart</span></p>
+                        <div className="flex mt-10">
+                            <input className="w-full outline-[#3BB77E] rounded-l-full px-5 font-main" type="email" name="email" placeholder="Your Email Address" />
+                            <button className="bg-[#3BB77E] px-4 py-3 rounded-r-full text-white font-main font-bold">Subscribe</button>
+                        </div>
                     </div>
                 </div>
-                <div className='pt-8 pr-8'>
-                    <img src={banner9} alt="" />
+                <div className="flex justify-center px-3">
+                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-9.png" alt="" />
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 
