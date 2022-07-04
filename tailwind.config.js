@@ -2,7 +2,7 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", "./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
     colors: {
@@ -17,7 +17,7 @@ module.exports = {
       "textBody": "#7e7e7e",
       "brandColor1": "#81B13D",
       "brandColor2": "#FDC040",
-      "brand1": "#5B9D34",
+      "brand1": "#3BB77E",
       "scale1": "#81B13D",
       "scale2": "#3A882B",
       "scale3": "#227226",
@@ -46,6 +46,8 @@ module.exports = {
       'que': ["Quicksand"]
     }
   },
-  plugins: [],
-  
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ]
+
 }
