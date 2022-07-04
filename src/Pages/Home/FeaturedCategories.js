@@ -38,12 +38,12 @@ const FeaturedCategories = () => {
         );
     }
 
-    const size=useWindowSize();
+    const size = useWindowSize();
     const settings = {
         arrows: true,
         infinite: true,
         speed: 500,
-        slidesToShow: size>=1280?6:4,
+        slidesToShow: size >= 1280 ? 6 : 4,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
@@ -129,7 +129,7 @@ const FeaturedCategories = () => {
 
 
             </div>
-            {/* //  slider start */} 
+            {/* //  slider start */}
             <div>
                 <div>
 
@@ -152,7 +152,7 @@ const FeaturedCategories = () => {
 
             {/* three card */}
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 my-6'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 my-6 mx-3 lg:mx-2'>
                 <div className='bg-onionOne relative w-full h-60 bg-cover rounded ' >
                     <div className='absolute top-5 z-[2] p-8'>
                         <h3 className='text-[24px] font-bold font-Quicksand text-[#253D4E] hover:-translate-y-3 duration-500 min-h-[100px] '>Everyday Fresh & <br /> Clean with Our<br /> Products</h3>

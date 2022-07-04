@@ -16,6 +16,7 @@ import Singup from './Pages/Singup/Singup';
 import ForgetPassword from './Pages/ForgetPassword/ForgetPassword';
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import Contact from './Pages/Contact/Contact';
+import About from './Pages/About/About';
 
 import Account from './Pages/Account';
 import Dashboard from './Dashboard/Dashboard';
@@ -40,6 +41,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/cart' element={<MyCart></MyCart>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/singup' element={<Singup></Singup>}></Route>
         <Route path='/forgetpassword' element={<ForgetPassword></ForgetPassword>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>

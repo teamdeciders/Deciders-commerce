@@ -11,6 +11,7 @@ const NavbarMenu = () => {
                 <li className='hover:text-success heading-6'><Link to="/">Home</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Hot Deals</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Home</Link></li>
+                <li className='hover:text-success heading-6'><Link to="/about">About</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Food </Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Vegetables</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Drink </Link></li>
@@ -19,9 +20,9 @@ const NavbarMenu = () => {
                 <li className='hover:text-success heading-6'><Link to="/">Bakery</Link></li>
             </ul>
             <div className='flex items-center'>
-                <BsHeadset className='h-[40px] w-[40px]'/>
+                <BsHeadset className='h-[40px] w-[40px]' />
                 <div>
-                    <span className='text-scale1 text- heading-4'>1900-80</span><br/>
+                    <span className='text-scale1 text- heading-4'>1900-80</span><br />
                     <span className='text-textBody text-xs '>24/7 Support Center</span>
                 </div>
             </div>
