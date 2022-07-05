@@ -18,11 +18,11 @@ const NavbarTop = () => {
             <img className='h-[62.17px]' src='https://i.ibb.co/f9VXHJ7/Logo.png' alt="logo" />
 
             <ul className='flex font-lato  justify-between gap-5 font-base text-textBody mr-5'>
-                <li><Link className='flex gap-1 items-center relative' to="/"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span>< BsHeart /></Link></li>
-                <li><Link className='flex gap-1 items-center relative' to="/"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span><AiOutlineShoppingCart /></Link></li>
+                <li><Link className='flex gap-1 items-center relative' to="/wishlist"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span>< BsHeart /></Link></li>
+                <li><Link className='flex gap-1 items-center relative' to="/cart"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span><AiOutlineShoppingCart /></Link></li>
             </ul>
 
-            <div className={`${isOpen ? 'block' : 'hidden'} absolute top-[-50px] left-[-20px] bg-white w-[380px] h-screen z-10 px-5  shadow-lg  `}>
+            <div className={`${isOpen ? 'block' : 'hidden'} absolute top-[-50px] lef t-[-20px] bg-white w-[380px] h-screen z-10 px-5  shadow-lg  `}>
                 <ul className='flex justify-between items-center py-5'>
                     <li><Link className='display-2 bg-success' to="/"><img className='h-[48px] ' src='https://i.ibb.co/f9VXHJ7/Logo.png' alt="logo" /></Link></li>
                     <li onClick={() => setIsOpen(!isOpen)} className='cursor-pointer hover:bg-primary px-2 rounded-lg ease-in font-bold'>X</li>
@@ -69,8 +69,8 @@ const NavbarTop = () => {
 
                 <ul className='flex font-lato   justify-between gap-5 font-base text-textBody'>
                     <li><Link className='flex gap-1 items-center hover:text-success ' to="/"><FiUser /> Account</Link></li>
-                    <li><Link className='flex gap-1 items-center hover:text-success ' to="/"><BsHeart /> Wishlist</Link></li>
-                    <li><Link className='flex gap-1 items-center hover:text-success relative' to="/"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span><AiOutlineShoppingCart /> Cart</Link></li>
+                    <li><Link className='flex gap-1 items-center hover:text-success ' to="/wishlist"><BsHeart /> Wishlist</Link></li>
+                    <li><Link className='flex gap-1 items-center hover:text-success relative' to="/cart"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span><AiOutlineShoppingCart /> Cart</Link></li>
 
                 </ul>
             </div>
