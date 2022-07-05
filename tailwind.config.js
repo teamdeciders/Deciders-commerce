@@ -2,7 +2,7 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", "./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
     colors: {
@@ -33,7 +33,9 @@ module.exports = {
       backgroundImage: {
         'onionOne': "url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-1.png')",
         'drinks': "url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-2.png')",
-        'vegetable': "url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-3.png')"
+        'vegetable': "url('http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-3.png')",
+        'count': "url('/src/Assets/Image/Mask Group.png')",
+        'countUp': "url('/src/Assets/Image/bg.png')",
       }
     },
     fontFamily: {
@@ -46,6 +48,8 @@ module.exports = {
       'que': ["Quicksand"]
     }
   },
-  plugins: [],
-  
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ]
+
 }
