@@ -4,14 +4,17 @@ import { GoLocation } from 'react-icons/go'
 import { FiPhoneCall, FiClock } from 'react-icons/fi'
 import { GiPaperPlane } from 'react-icons/gi'
 import { Link } from 'react-router-dom';
+import { BsFacebook, BsMessenger, BsTelephone } from 'react-icons/bs';
+import { AiOutlineInstagram, AiOutlineTeam, AiOutlineTwitter } from 'react-icons/ai';
+import { FaYoutube } from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer>
-            <div className='h-[40vh] md:w-full pt-8 '>
+            <div className='h-[40vh] md:w-full pt-8'>
                 <FooterTopBanner />
                 {/* Footer HEre */}
                 <div className='mt-6 p-2 flex'>
-                    <div className="flex flex-wrap justify-between gap-12">
+                    <div className="flex flex-wrap justify-between gap-8">
                         <div className="footerlogo max-w-sm  pr-6   ">
                             <img src="https://i.ibb.co/f9VXHJ7/Logo.png" alt="" />
                             <p className='my-2'> Pellentesque posuere orci lobortis</p>
@@ -21,18 +24,7 @@ const Footer = () => {
                                 <li className=' translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '><GiPaperPlane className='text-[#3BB77E] font-bold inline-block mr-2' /><span className='font-bold'>Email: </span>contact@nestmart.com</li>
                                 <li className=' translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '><FiClock className='text-[#3BB77E] font-bold inline-block mr-2' /><span className='font-bold'>Hours: </span> 10:00 - 18:00, Mon - Sat</li>
                             </ul>
-                            <div className="footerApp&Payment pr-6 max-w-sm w-full  ">
 
-                                <h4 className='my-2 heading-4 font-bold'>App & Payment</h4>
-                                <p className='my-2 '> Install DL Commerce App from App Store or Google Play</p>
-                                <div className='flex'>
-                                    <img className='w-2/4' src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/app-store.jpg" alt="" />
-                                    <img className='w-2/4' src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/google-play.jpg" alt="" />
-                                </div>
-                                <p className='my-2'>Secured Payment Gateways</p>
-                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/payment-method.png" alt="" />
-
-                            </div>
 
                         </div>
                         {/* Company information */}
@@ -40,9 +32,9 @@ const Footer = () => {
 
                             <h4 className='my-2 heading-4 font-bold'>Company</h4>
                             <ul>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>About Us</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Privacy Policy</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Delivery Information</li>
+                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '><Link to='/about'>About us</Link></li>
+                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '><Link to='/contact'>Contact us</Link></li>
+                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '><Link to='/blog'>Blogs</Link></li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Terms & Conditions</li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Contact Us</li>
                                 <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Support Center</li>
@@ -67,24 +59,13 @@ const Footer = () => {
                             </ul>
 
                         </div>
-                        {/* Corporate information */}
-                        <div className="footerCorporate min-w-max text-left pr-6  ">
 
-                            <h4 className='my-2 heading-4 font-bold'>Corporate</h4>
-                            <ul>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Become a Vendor</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>View Cart</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Affiliate Program</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Farm Business</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Farm Careers</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Our Suppliers</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Accessibility</li>
+                        {/* App & Payment */}
 
-                            </ul>
 
-                        </div>
+
                         {/* Information information */}
-                        <div className="footerInformation min-w-max text-left  ">
+                        {/* <div className="footerInformation min-w-max text-left  ">
 
                             <h4 className='my-2 heading-4 font-bold'>Information</h4>
                             <ul>
@@ -98,9 +79,9 @@ const Footer = () => {
 
                             </ul>
 
-                        </div>
-                        {/* App & Payment */}
-                        {/* <div className="footerApp&Payment pr-6 max-w-sm w-full  ">
+                        </div> */}
+
+                        <div className="footerApp&Payment pr-6 max-w-sm w-full  ">
 
                             <h4 className='my-2 heading-4 font-bold'>App & Payment</h4>
                             <p className='my-2 '> Install DL Commerce App from App Store or Google Play</p>
@@ -111,7 +92,8 @@ const Footer = () => {
                             <p className='my-2'>Secured Payment Gateways</p>
                             <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/payment-method.png" alt="" />
 
-                        </div> */}
+                        </div>
+
 
                     </div>
 
@@ -119,9 +101,45 @@ const Footer = () => {
                 <div>
                     <hr className='my-2 bg-[#D8F1E5]' />
 
-                    <div className='md:flex justify-between'>
-                        <p>© 2022, Deciders Ecommerce </p>
-                        <p>Designed by <span className='text-brand1'>Deciders Team</span> All rights reserved  </p>
+                    <div className='md:flex justify-between pb-10'>
+                        <div>
+                            <p>© 2022, Deciders Ecommerce </p>
+                            <p>Designed by <span className='text-brand1'>Deciders Team</span> All rights reserved  </p>
+                        </div>
+
+                        <div className='flex flex-col'>
+                            <div className='flex items-center gap-2'>
+                                <span><BsTelephone className='w-8 h-8 '></BsTelephone></span>
+                                <span>
+                                    <p className='text-2xl font-sans text-success font-semibold'>1900 - 6666</p>
+                                    <p className='text-gray-500 text-xs'>Working 8:00 - 22:00</p>
+                                </span>
+
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <span><BsTelephone className='w-8 h-8 '></BsTelephone></span>
+                                <span>
+                                    <p className='text-2xl font-sans text-success font-semibold'>1900 - 6666</p>
+                                    <p className='text-gray-500 text-xs'>Working 8:00 - 22:00</p>
+                                </span>
+
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div className='flex gap-4'>
+                                <p className='text-xl font-sans text-gray-700'>Follow Us</p>
+                                <span className='flex gap-2 text-success '>
+                                    <BsFacebook className='w-6 h-6 translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer'></BsFacebook>
+                                    <AiOutlineTwitter className='w-6 h-6 translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer'></AiOutlineTwitter>
+                                    <AiOutlineInstagram className='w-6 h-6 translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer'></AiOutlineInstagram>
+                                    <FaYoutube className='w-6 h-6 translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer'></FaYoutube>
+                                    <BsMessenger className='w-6 h-6 translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer'></BsMessenger>
+                                </span>
+                            </div>
+                            <p className='mt-1 font-medium text-gray-500 font-lato'>Up to 15% discount on your first subscribe</p>
+                        </div>
                     </div>
 
 
