@@ -21,8 +21,8 @@ const NavbarTop = () => {
                 <img className='h-[62.17px]' src='https://i.ibb.co/f9VXHJ7/Logo.png' alt="logo" />
 
                 <ul className='flex font-lato  justify-between gap-5 font-base text-textBody mr-5'>
-                    <li><Link className='flex gap-1 items-center relative' to="/"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span>< BsHeart /></Link></li>
-                    <li><Link className='flex gap-1 items-center relative' to="/"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span><AiOutlineShoppingCart /></Link></li>
+                    <li><Link className='flex gap-1 items-center relative' to="/wishlist"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span>< BsHeart /></Link></li>
+                    <li><Link className='flex gap-1 items-center relative' to="/cart"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span><AiOutlineShoppingCart /></Link></li>
                 </ul>
 
                 <div className={`${isOpen ? 'block' : 'hidden'} absolute top-[-50px] left-[-20px] bg-white w-[380px] h-screen z-10 px-5  shadow-lg  `}>
@@ -111,7 +111,7 @@ const NavbarTop = () => {
                                         </div>
                                         <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer  hover:text-success translate-y-0  duration-300'>
                                             <GiSelfLove className='w-6 h-6'></GiSelfLove>
-                                            <h1>My WishList</h1>
+                                            <Link to="/wishlist"><h1>My WishList</h1></Link>
                                         </div>
                                         <div className='flex gap-2 items-center ml-4 mt-4 cursor-pointer  hover:text-success translate-y-0  duration-300'>
                                             <RiListSettingsFill className='w-6 h-6'></RiListSettingsFill>

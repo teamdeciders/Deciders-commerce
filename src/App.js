@@ -26,6 +26,7 @@ import TrackYourOrder from './Dashboard/TrackYourOrder';
 import AccountDetails from './Dashboard/AccountDetails';
 
 import Checkout from './Pages/Checkout/Checkout';
+import Wishlist from './Pages/Wishlist/Wishlist';
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
 
 
         <Route path='/checkout' element={<Checkout></Checkout>}></Route>
+        <Route path='/wishlist' element={<Wishlist></Wishlist>}></Route>
         <Route path='*' element={<NotFoundPage></NotFoundPage>}></Route>
 
       </Routes>
