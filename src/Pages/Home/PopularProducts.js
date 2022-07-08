@@ -24,6 +24,7 @@ const PopularProducts = () => {
           </ul>
         </div>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
         <div className="max-w-sm border border-[#BCE3C9] rounded-lg overflow-hidden group mx-auto">
           <p className="mt-2 mb-3 text-[#FFF]">

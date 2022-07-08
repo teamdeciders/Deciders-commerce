@@ -30,19 +30,18 @@ const NavbarTop = () => {
                         <li><Link className='display-2 bg-success' to="/"><img className='h-[48px] ' src='https://i.ibb.co/f9VXHJ7/Logo.png' alt="logo" /></Link></li>
                         <li onClick={() => setIsOpen(!isOpen)} className='cursor-pointer hover:bg-primary px-2 rounded-lg ease-in font-bold'>X</li>
                     </ul>
-                    <form class="flex items-center my-10">
-                        <label for="voice-search" class="sr-only">Search</label>
-                        <div class="relative w-full">
-                            <input type="text" class="border border-success text-gray  rounded-lg   block w-full pl-10 p-2.5 " placeholder="Search.." />
-                            <button type="button" class="flex absolute inset-y-0 right-0 items-center pr-3">
-                                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                    <form className="flex items-center my-10">
+                        <label for="voice-search" className="sr-only">Search</label>
+                        <div className="relative w-full">
+                            <input type="text" className="border border-success text-gray  rounded-lg   block w-full pl-10 p-2.5 " placeholder="Search.." />
+                            <button type="button" className="flex absolute inset-y-0 right-0 items-center pr-3">
+                                <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                             </button>
                         </div>
                     </form>
-                    <ul className='flex flex-col gap-4'>
+                    <ul className='flex flex-col gap-2'>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/">Hot  Deals</Link></li>
-                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/">Hot Deals</Link></li>
                         <li><Link to="/">Food </Link></li>
                         <li><Link to="/">Vegetables</Link></li>
                         <li><Link to="/">Drink </Link></li>
@@ -59,24 +58,24 @@ const NavbarTop = () => {
             {size >= 1280 && <div className='h-[128px] flex items-center justify-between '>
                 <img className='h-[62.17px]' src='https://i.ibb.co/f9VXHJ7/Logo.png' alt="logo" />
 
-                <form class="flex items-center">
-                    <label for="voice-search" class="sr-only">Search</label>
-                    <div class="relative w-full">
-                        <input type="text" class="border border-success  text-gray  rounded-lg   block lg:w-[700px] pl-10 p-2.5 " placeholder="Search.." />
-                        <button type="button" class="flex absolute inset-y-0 right-0 items-center pr-3">
-                            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                <form className="flex items-center">
+                    <label for="voice-search" className="sr-only">Search</label>
+                    <div className="relative w-full">
+                        <input type="text" className="border border-success  text-gray  rounded-lg   block lg:w-[700px] pl-10 p-2.5 " placeholder="Search.." />
+                        <button type="button" className="flex absolute inset-y-0 right-0 items-center pr-3">
+                            <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                         </button>
                     </div>
                 </form>
 
 
                 <ul className='flex font-lato   justify-between gap-5 font-base text-textBody'>
-                    <div class="flex gap-1 items-center">
+                    <div className="flex gap-1 items-center">
                         <div>
-                            <div class="dropdown relative">
+                            <div className="dropdown relative">
 
                                 <button
-                                    class="  dropdown-toggle bg-blue-600   font-medium 
+                                    className="dropdown-toggle bg-blue-600   font-medium 
                                     flex
                                     items-center
                                     whitespace-nowrap
@@ -93,7 +92,7 @@ const NavbarTop = () => {
 
                                 </button>
                                 <ul
-                                    class=" dropdown-menu min-w-max absolute bg-white text-base z-50 float-left py-2 list-none  text-left shadow-md rounded-md mt-1  hidden   m-0  bg-clip-padding border-none"
+                                    className=" dropdown-menu min-w-max absolute bg-white text-base z-50 float-left py-2 list-none  text-left shadow-md rounded-md mt-1  hidden   m-0  bg-clip-padding border-none"
                                     aria-labelledby="dropdownMenuButton1"
                                 >
                                     <div className='w-[230px] h-[270px] '>
@@ -129,10 +128,12 @@ const NavbarTop = () => {
                                 </ul>
                             </div>
                         </div>
+
+
                     </div>
 
 
-                    <li><Link className='flex gap-1 items-center hover:text-success ' to="/"><BsHeart /> Wishlist</Link></li>
+                    <li><Link className='flex gap-1 items-center hover:text-success ' to="/wishlist"><BsHeart /> Wishlist</Link></li>
                     <li><Link className='flex gap-1 items-center hover:text-success relative' to="/"> <span className='absolute text-xs top-[-9px] left-[9px] bg-success rounded-lg px-1 text-white'>6</span><AiOutlineShoppingCart /> Cart</Link></li>
 
                 </ul>

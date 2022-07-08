@@ -60,27 +60,6 @@ const Footer = () => {
 
                         </div>
 
-                        {/* App & Payment */}
-
-
-
-                        {/* Information information */}
-                        {/* <div className="footerInformation min-w-max text-left  ">
-
-                            <h4 className='my-2 heading-4 font-bold'>Information</h4>
-                            <ul>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '><Link to='/contact'>Contact us</Link></li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Advanced Search</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Help & FAQ's</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Store Location</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Help Ticket</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Orders & Returns</li>
-                                <li className='text-left  translate-y-0 hover:-translate-y-1 duration-300 cursor-pointer  '>Feedback for us</li>
-
-                            </ul>
-
-                        </div> */}
-
                         <div className="footerApp&Payment pr-6 max-w-sm w-full  ">
 
                             <h4 className='my-2 heading-4 font-bold'>App & Payment</h4>
