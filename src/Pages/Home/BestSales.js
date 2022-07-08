@@ -219,7 +219,10 @@ const BestSales = () => {
             </button>
           </div>
         </div>
+
+
       </div>
+
     </div>
   );
 };

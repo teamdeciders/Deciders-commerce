@@ -1,7 +1,7 @@
 import React from 'react';
-import { BsChevronDown, BsHeadset, BsPlusCircle, TbPlus } from 'react-icons/bs';
+import { BsChevronDown, BsHeadset, BsPlusCircle } from 'react-icons/bs';
+import { RiArrowDropDownLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-
 const NavbarMenu = () => {
     return (
         <div className='flex gap-4 justify-around items-center'>
@@ -17,10 +17,6 @@ const NavbarMenu = () => {
                            whitespace-nowrap bg-success text-white heading-6 flex justify-around items-center hover:bg-opacity-90'>
                             Browse All Categories <BsChevronDown className='font-bold' />
                         </button>
-
-
-
-
                         <ul
                             className=" w-[550px] mt-1 dropdown-menu  min-w-max absolute bg-white text-base z-50 float-left py-6 list-none  text-left  rounded-lg  shadow-2xl  hidden  m-0  bg-clip-padding border border-success  "
                             aria-labelledby="dropdownMenuButton2"
@@ -45,9 +41,6 @@ const NavbarMenu = () => {
                                         <img className='w-8 h-8' src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/category-5.svg" alt="" />
                                         <h1>Freash Fruit</h1>
                                     </div>
-
-
-
 
                                 </div>
 
@@ -94,17 +87,60 @@ const NavbarMenu = () => {
 
 
 
-            <ul className='flex gap-5'>
+            <ul className='flex flex-wrap gap-4'>
                 <li className='hover:text-success heading-6'><Link to="/">Home</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Hot Deals</Link></li>
-                <li className='hover:text-success heading-6'><Link to="/">Home</Link></li>
-                <li className='hover:text-success heading-6'><Link to="/about">About</Link></li>
+
                 <li className='hover:text-success heading-6'><Link to="/">Food </Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Vegetables</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Drink </Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Cookies</Link></li>
                 <li className='hover:text-success heading-6'><Link to="/">Meat & Seafoodnk</Link> </li>
                 <li className='hover:text-success heading-6'><Link to="/">Bakery</Link></li>
+                <div>
+                    <div className="dropdown relative">
+
+                        <button
+                            className="dropdown-toggle bg-blue-600  hover:text-success heading-6 
+                                    flex
+                                    items-center
+                                    whitespace-nowrap
+                                  "
+
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Pages
+
+                            <RiArrowDropDownLine className='w-6 h-6'></RiArrowDropDownLine>
+
+                        </button>
+                        <ul
+                            className=" dropdown-menu min-w-max absolute bg-white text-base z-50 float-left py-2 list-none  text-left shadow-md rounded-md mt-1  hidden   m-0  bg-clip-padding border-none"
+                            aria-labelledby="dropdownMenuButton1"
+                        >
+                            <div className='w-[230px] h-full flex flex-col '>
+                                <Link to='/blog' className=' ml-4 mt-3 font-que font-medium cursor-pointer hover:text-success translate-y-0  duration-300'>
+                                    Blogs
+                                </Link>
+                                <Link to='/about' className=' ml-4 mt-3 font-que font-medium cursor-pointer hover:text-success translate-y-0  duration-300'>
+                                    About me
+                                </Link>
+                                <Link to='/contact' className=' ml-4 mt-3 font-que font-medium cursor-pointer hover:text-success translate-y-0  duration-300'>
+                                    Contact us
+                                </Link>
+                                <Link to='/login' className=' ml-4 mt-3 font-que font-medium cursor-pointer hover:text-success translate-y-0  duration-300'>
+                                    Login
+                                </Link>
+
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+
             </ul>
             <div className='flex items-center'>
                 <BsHeadset className='h-[40px] w-[40px]' />
