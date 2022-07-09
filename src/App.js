@@ -27,6 +27,7 @@ import AccountDetails from './Dashboard/AccountDetails';
 
 import Checkout from './Pages/Checkout/Checkout';
 import Wishlist from './Pages/Wishlist/Wishlist';
+import Nav from './Components/navvvv/Nav';
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
 
         <Route path='/checkout' element={<Checkout></Checkout>}></Route>
         <Route path='/wishlist' element={<Wishlist></Wishlist>}></Route>
+        <Route path='/nav' element={<Nav></Nav>}></Route>
         <Route path='*' element={<NotFoundPage></NotFoundPage>}></Route>
 
       </Routes>
