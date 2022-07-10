@@ -30,6 +30,8 @@ const BestSales = () => {
         </div>
       </div>
 
+
+
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
         <div className="relative mx-auto sm:mt-10 md:mt-0">
           <img src={img1} alt="" />
@@ -101,6 +103,10 @@ const BestSales = () => {
             </button>
           </div>
         </div>
+
+
+
+
         <div className="border border-[#BCE3C9] rounded-lg overflow-hidden group">
           <p className="mt-2 mb-3 text-[#FFF]">
             <small className="bg-[#3BB77E] text-center px-4 py-1 z- rounded-r-full ">

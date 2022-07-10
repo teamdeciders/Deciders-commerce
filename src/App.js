@@ -33,7 +33,8 @@ import Nav from './Components/navvvv/Nav';
 function App() {
   return (
     <div className="md:w-[90%] mx-auto">
-      <Navbar />
+      {/* <Navbar /> */}
+      <Nav></Nav>
       <Routes>
 
         <Route path="/" element={<Home></Home>}></Route>

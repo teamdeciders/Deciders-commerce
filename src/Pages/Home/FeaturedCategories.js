@@ -110,7 +110,7 @@ const FeaturedCategories = () => {
         <section>
             <div className='container flex justify-around   items-center-center'>
                 <div className=''>
-                    <h1 className='font-bold justify-start text-[32px] text-[#253D4E]'>Featured Categories</h1>
+                    <h1 className='font-bold justify-start md:text-4xl text-xl  text-[#253D4E]'>Featured Categories</h1>
                 </div>
                 <div className='mt-4'>
                     <ul className="flex text-[16px] text-textBody font-normal gap-4">
